@@ -1,25 +1,21 @@
 package prac04_22001816
-import scala.io.StdIn
+
 object Q2 {
-
   def main(args: Array[String]): Unit = {
+    println("Enter a number")
+    var num = scala.io.StdIn.readInt()
 
-    println("enter the number which you like : ")
-    var num=StdIn.readLine().toInt
-
-    if(num==0) {
-      println("number is zero")
+    if(num<0){
+      println(s"$num is a negative number.")
     }
-
-    else if(num<0) {
-      println("negative number")
+    else if(num==0){
+      println(s"$num is a zero.")
     }
-    else if(num%2 == 0) {
-      println("Even number")
-    }
+    else if(num % 2 == 0){
+      println(s"$num is an even number.")
+      }
     else {
-      println("odd number")
-    }
-
+      println(s"$num is an odd number.")
+      }
   }
 }
