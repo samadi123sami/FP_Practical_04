@@ -13,9 +13,9 @@ object Q2 {
     }
     else if(num % 2 == 0){
       println(s"$num is an even number.")
-      }
+    }
     else {
       println(s"$num is an odd number.")
-      }
+    }
   }
 }
