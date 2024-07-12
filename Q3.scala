@@ -1,12 +1,15 @@
 package prac04_22001816
 object Q3 {
-
-  def toUpper(s: String): String = s.toUpperCase
-
-  def toLower(s: String): String = s.toLowerCase
-
   def formatNames(name: String)(formatFunction: String => String): String = {
     formatFunction(name)
+  }
+
+  def toUpper(str: String): String = {
+    str.toUpperCase
+  }
+
+  def toLower(str: String): String = {
+    str.toLowerCase
   }
 
   def main(args: Array[String]): Unit = {
@@ -15,9 +18,9 @@ object Q3 {
     val saman = formatNames("Saman")(toLower)
     val kumara = formatNames("Kumara")(name => name.take(name.length - 1) + name.last.toUpper)
 
-    println(benny)      // Output: BENNY
-    println(niroshan)   // Output: NIroshan
-    println(saman)      // Output: saman
-    println(kumara)     // Output: KumarA
+    println(benny)
+    println(niroshan)
+    println(saman)
+    println(kumara)
   }
 }
